@@ -1,0 +1,22 @@
+{
+  "name": "sample_cicd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adithya-S-Nair/sample_cicd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adithya-S-Nair/sample_cicd/issues"
+  },
+  "homepage": "https://github.com/Adithya-S-Nair/sample_cicd#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
