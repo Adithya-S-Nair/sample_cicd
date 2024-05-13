@@ -2,7 +2,7 @@ const express = require('express');
 const { exec } = require('child_process');
 
 const app = express();
-const port = 5000;
+const port = 5010;
 
 // Route to trigger execution of shell script
 app.get('/rundeploy', (req, res) => {
