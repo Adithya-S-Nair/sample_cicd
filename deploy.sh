@@ -20,4 +20,4 @@ docker rmi sample_cicd_server
 docker build -t sample_cicd_server .
 
 # Run Docker container
-docker run -d -p 5010:5000 --name sample_cicd_server sample_cicd_server
+docker run -d -p 5011:5000 --name sample_cicd_server sample_cicd_server
