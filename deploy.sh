@@ -4,20 +4,20 @@
 # For example:
 echo "Running deployment script..."
 # Change to your project directory
-cd /nsldev/accountaggregator/sample_cicd
+cd /nsldev/accountaggregator/sample_cicd_server
 
 # Pull latest changes
 git pull origin main
 
 # Stop and remove the existing container
-docker stop sample-deployer
-docker rm sample-deployer
+docker stop sample_cicd_server
+docker rm sample_cicd_server
 
 # Remove existing image
-docker rmi sample-deployer
+docker rmi sample_cicd_server
 
 # Build Docker image from Dockerfile in current directory
-docker build -t sample-deployer .
+docker build -t sample_cicd_server .
 
 # Run Docker container
-docker run -d -p 5010:5000 --name sample-deployer sample-deployer
+docker run -d -p 5010:5000 --name sample_cicd_server sample_cicd_server
