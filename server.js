@@ -6,7 +6,7 @@ const port = 5000;
 
 // Route to trigger execution of shell script
 app.get('/rundeploy', (req, res) => {
-    exec('sh ./deploy.sh', (err, stdout, stderr) => {
+    exec('sh /app/deploy.sh', (err, stdout, stderr) => {
         if (err) {
             console.error(err);
             return res.status(500).send('Error executing script');
